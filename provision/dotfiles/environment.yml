@@ -1,0 +1,29 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - graphviz
+  - ipython
+  - ipywidgets
+  - joblib
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - nbdime
+  - numpy
+  - pandas
+  - pillow
+  - pip
+  - python=3.8
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - tqdm
+  - wheel
+  - widgetsnbextension=3.5.1
+  - line_profiler
+  - memory_profiler
+  - Cython
+  - pip:
+    - psutil
+    - pyvirtualdisplay # add if on headless server
