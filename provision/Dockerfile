@@ -13,13 +13,12 @@ RUN chmod +x /tini                                                              
         git                                                                                 \
         sudo                                                                                \
         cmake zlib1g-dev libjpeg-dev xvfb ffmpeg xorg-dev libboost-all-dev libsdl2-dev swig \
+        texlive texlive-xetex texlive-latex-extra pandoc pandoc-citeproc                    \
         unzip zip nodejs npm                                                                \
     && rm -rf /var/lib/apt/lists/*
 
-# Extra dependencies for wand
-# RUN apt-get update \
-#     && apt-get install -y libmagickwand-dev \
-#     && apt-get install -y xvfb
+# RUN apt-get update && apt-get install -y texlive texlive-xetex texlive-latex-extra pandoc pandoc-citeproc
+
 ARG envname=devenv
 COPY provision/dotfiles/environment.yml /tmp/
 RUN conda update -y -n base conda                                     \
