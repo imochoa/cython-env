@@ -1,3 +1,5 @@
+# vim:set ft=dockerfile:
+
 FROM continuumio/miniconda3:4.8.2
 
 # Add Tini
